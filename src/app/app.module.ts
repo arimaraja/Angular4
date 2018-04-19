@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { RanpicDirective } from './ranpic.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RanpicDirective
   ],
   imports: [
     BrowserModule
