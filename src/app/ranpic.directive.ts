@@ -9,7 +9,7 @@ import { Directive,
 
 export class RanpicDirective {
 	constructor(private el: ElementRef) { 
-		this.ChangeText("Initial");
+		this.ChangeText("Click this Text");
 	}
 
 	ngAfterContentInit() {
@@ -22,6 +22,6 @@ export class RanpicDirective {
   	}
 
   	private ChangeText( tVal :string ){
-  		this.el.nativeElement.innerHTML="<b>" +  tVal " </b>"
+  		this.el.nativeElement.innerHTML="<b>" +  tVal + " </b>"
   	}
 }
